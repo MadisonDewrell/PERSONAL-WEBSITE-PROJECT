@@ -1,0 +1,71 @@
+@font-face {
+    font-family: 'BubblyHandwriting';
+    src: url('BubblyHandwriting-Regular.ttf') format('truetype');
+}
+
+    body {
+        background-image: url("https://codehs.com/uploads/bb1dad4f036f810e2b48ab96e513b5f5");
+        background-repeat: repeat;
+        font-family: 'BubblyHandwriting', sans-serif;
+        margin: 0;
+        padding: 0;
+        cursor: url("https://0x0.st/Xp1A.png"), auto !important;
+        font-family: 'BubblyHandwriting', sans-serif;
+    }
+
+    #background {
+        background-image: url("https://codehs.com/uploads/87a0e9ea1fc2fea396be645db0b88b93");
+        background-repeat: repeat;
+        background-position: center;
+        background-size: auto;
+        font-family: 'BubblyHandwriting', sans-serif;
+    }
+    
+    .buttonLog {
+        width:16%;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-left: 20%;
+        padding-top: 9%;
+        position: fixed;
+        font-family: 'BubblyHandwriting', sans-serif;
+        
+    }
+
+    #main {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1250px;
+        height: calc(1250px * 9 / 16);
+        background-image: url(https://codehs.com/uploads/85bec30f1ed02b9cb8c9ea1094611844);
+        background-size: 1250px;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'BubblyHandwriting', sans-serif;
+    }
+    
+    #home{
+        position: fixed;
+        left: 4%;
+        top: 6%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        
+    }
+    
+    #rightButton{
+        position: fixed;
+        left: 74%;
+        top: 76%;
+        width: 100px;
+    }
+    
+    #leftButton{
+        position: fixed;
+        left: 20%;
+        top: 76%;
+        width: 100px;
+    }

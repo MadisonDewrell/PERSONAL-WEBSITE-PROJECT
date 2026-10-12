@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'moreSugar';
+    src: url('https://codehs.com/uploads/21a14c53c0895f03a02b83bb4032ca7a') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+a {
+  color: #c8bbb5;
+  text-decoration: none !important;
+  outline: none !important;
+  font-family: 'BubblyHandwriting', sans-serif;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #645651;
+
+}
+
+a:hover {
+  color: #ffc4d8 !important;
+}
+
+.myButton {
+  position: relative;
+  padding: 2px;
+  padding-left: 60px;
+  display: flex;
+  font-family: 'moreSugar', sans-serif;
+  height: 23px;
+  margin-top:30px;
+
+}
+
+.buttonLog {
+        width:16%;
+        letter-spacing: 1px;
+        font-size: 23px;
+        margin-left: 20%;
+        padding-top: 7.7%;
+        position: fixed;
+        font-family: 'moreSugar', sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        
+    }
+
+.myButton > img {
+  position: absolute;
+  top: 50%;
+  left: 2px;
+  -ms-transform: translateY(-60%);
+  transform: translateY(-55%);
+  font-family: 'BubblyHandwriting', sans-serif;
+}
+
+#homeButton:hover > img {
+  -ms-transform: translateY(-50%) rotate(15deg);
+  transform: translateY(-50%) rotate(15deg);
+  font-family: 'BubblyHandwriting', sans-serif;
+}
+
+    
+    #home{
+        position: absolute;
+        left: 4%;
+        top: 6%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        z-index: 999;
+    }
+
+#aboutButton:hover > img {
+  content: url(https://cloverbell.neocities.org/materials/decor/teddybear.gif);
+}
+
+.homebutton{
+        width: 17%;
+        margin-left: 20%;
+        padding-top: 9%;
+        position: fixed;
+        font-family: 'BubblyHandwriting', sans-serif;
+}
+
+    #rightMusicButton{
+      position: fixed;
+      left: 75.5%;
+      top: 63%;
+    }
+    
+    #leftMusicButton{
+      position: fixed;
+      left: 51%;
+      top: 63%;
+    }
+
+    #rightButton{
+        position: fixed;
+        left: 74%; /* left and right must add up to 94 */
+        top: 71%;
+        width: 100px;
+    }
+    
+    
+    #leftButton{
+        position: fixed;
+        left: 20%;
+        top: 71%;
+        width: 100px;
+    }

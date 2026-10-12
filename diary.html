@@ -1,0 +1,232 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link href="index.css" rel="stylesheet" type="text/css" media="all">
+		<link href="button.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/diary.css" rel="stylesheet" type="text/css" media="all">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	
+	
+	<style>
+  body {
+    margin: 0;
+    cursor: none; /* Hides default cursor */
+  }
+
+  .sparkle {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: url('https://codehs.com/uploads/8edec3be4b6ab1043e64cb2f7f2491ca') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    animation: sparkle 0.7s forwards;
+  }
+
+  @keyframes sparkle {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+  }
+</style>
+
+
+
+<script>
+  document.addEventListener('click', createSparkles);
+
+  function createSparkles(e) {
+    const numSparkles = 10; // num sparkles per click
+
+    for (let i = 0; i < numSparkles; i++) {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+
+      // Random offset for each sparkle
+      const offsetX = (Math.random() - 0.5) * 100;
+      const offsetY = (Math.random() - 0.5) * 100;
+
+      sparkle.style.left = `${e.pageX + offsetX}px`;
+      sparkle.style.top = `${e.pageY + offsetY}px`;
+
+      document.body.appendChild(sparkle);
+
+      // Remove the sparkle after the animation ends
+      sparkle.addEventListener('animationend', () => {
+        sparkle.remove();
+      });
+    }
+  }
+  
+  
+</script>
+</head><body>
+
+	<img id = "titleBox" src="https://codehs.com/uploads/f2d23ccf68356fea8e229304adc3c50f" width=600px />
+        
+
+	<main>
+
+		<!-- 1st column -->
+		<div class="column">
+
+			<div class="pic digi">
+			    <img src="https://codehs.com/uploads/630a8a9ac799ae87344ba50846983cde">
+				<img src="https://codehs.com/uploads/d627edf3b6892fc226ff7fc2cc95136e">
+				<img src="https://codehs.com/uploads/faa5da8c78ae7f90a7a8fce571556674">
+				<img src="https://codehs.com/uploads/0ab4de72d469ab48c849c03f1045c366">
+
+
+				<div class="hov">
+					<div class="caption">
+						nature walk with havey!<br>
+						<b>november 26th 2024</b>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="pic digi">
+			    <img src="https://codehs.com/uploads/08ed799ac6b327e78f83e58bc88c0bb3">
+			    <img src="https://codehs.com/uploads/ce4dc0287ac93e75c7db8d3462b06155">
+			    <img src="https://codehs.com/uploads/a52ecdd1046a96ed3cbcc9ac3c38298b">
+			    <img src="https://codehs.com/uploads/b08ffb6eb7790ccb5ecd0b443c98d179">
+			    <img src="https://codehs.com/uploads/d76343e94f3436c320180048ab58fe48">
+
+
+
+				<div class="hov">
+					<div class="caption">
+					valentines part 2<br>
+						<b>feburary 12th 2024</b>
+					</div>
+				</div>
+			</div>
+			
+
+
+
+
+			
+
+		</div>
+		<!-- 2nd column -->
+		<div class="column">
+
+			<div class="pic digi"><img src="https://codehs.com/uploads/59aeb12737fbb063c10e32abd2d4c083">
+				<img src="https://codehs.com/uploads/e3d1551e22a6608074e9d13b00b4e416">
+				<img src="https://codehs.com/uploads/4c1d0ab66234495523fc000650d77c7e">
+				<img src="https://codehs.com/uploads/3f6c80ea7f007fe42c6adb0041e560bf">
+				<div class="hov">
+					<div class="caption">
+						amicalola falls state park hike with arthur
+						<b>november 10th 2024</b>
+					</div>
+				</div>
+			</div>
+
+			
+			<div class="pic digi">
+			<img src="https://codehs.com/uploads/4498a626ccaf658d5f083729931fa6d3">
+			<img src="https://codehs.com/uploads/ff4df6034faf1becb3657bb4500c34a0">
+			<img src="https://codehs.com/uploads/086297b79d3b27a17ff67ba030624e26">
+			<img src="https://codehs.com/uploads/6cedbaaf7aac9415906fc67a584add04">
+
+
+				<div class="hov">
+					<div class="caption">
+						beautiful day with elsa
+						<br><b>march 29th 2024</b>
+					</div>
+				</div>
+			</div>
+			
+			
+
+		</div>
+
+		<!-- 3rd column -->
+
+		<div class="column">
+
+		    <div class="pic digi">
+			<img src="https://codehs.com/uploads/90dd2321ae4b2e62ec7732256d15bb1d">
+			<img src="https://codehs.com/uploads/97c08d50ba1a589cb33414a6a5c056e5">
+			<img src="https://codehs.com/uploads/0a9c249502a8193abaef2124a7fcc0a9">
+			<img src="https://codehs.com/uploads/32f7afc14743c1e7d862af73a10a6ea1">
+			<img src="https://codehs.com/uploads/095c22b0133d6e34fb7db7b6b2461506">
+			<img src="https://codehs.com/uploads/4616da34e2a4a464779394a5ffd1bce6">
+			<img src="https://codehs.com/uploads/1737c4b790f75c33ebfd98a9a2ff76fa">
+			<img src="https://codehs.com/uploads/97b8803391981583663f77dda0f2268b">
+
+				<div class="hov">
+					<div class="caption">
+						farmers market and biking with elsa this weekend
+						<br>
+						<b>august 17th 2024</b>
+					</div>
+				</div>
+			</div>
+
+			
+		<div class="pic digi">
+		    <img src="https://codehs.com/uploads/1f471b41be2e56461624d11aec8d1122">
+	        <img src="https://codehs.com/uploads/ff93c6c358ee58b5e5cd21d92139916a">
+	        <img src="https://codehs.com/uploads/6a9ce16af37906d7b59790f20bbc28a5">
+
+				<div class="hov">
+					<div class="caption">
+					we waited over 7 hours for the hello kitty truck. worth it.
+					<br>
+						<b>feburary 17th 2024</b>
+					</div>
+				</div>
+			</div>
+		
+
+
+			<!-- column end div -->
+		</div>
+	
+	
+		<!-- 4th column -->
+		<div class="column">
+
+
+			
+		<div class="pic digi">
+				<img src="https://codehs.com/uploads/847e4bf810b59721241a90e89b718966">
+				<img src="https://codehs.com/uploads/c5d20bd3d9c4fb1add20fb209e02b7a8">
+				<img src="https://codehs.com/uploads/4f536ceefe5f86a02b15d9799a1a66e5">
+				<img src="https://codehs.com/uploads/25e52884d0dd207027cf0194b271d7e0">
+				<img src="https://codehs.com/uploads/9ba177d3a088f6e68cf8749bd016e2f2">
+				<img src="https://codehs.com/uploads/24f0ceeec6a82e029ca3a84f437e816f">
+				<div class="hov">
+					<div class="caption">
+						SENIOR SUNRISEEE
+						<br>
+						<b>august 5th 2024</b>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- 	column end div -->
+		</div>
+
+		<!-- box end div -->
+	</main>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'moreSugar';
+    src: url('https://codehs.com/uploads/21a14c53c0895f03a02b83bb4032ca7a') format('truetype');
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 20px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+@keyframes floatingTwo {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 0px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+
+    body {
+        background-image: url("https://codehs.com/uploads/87a0e9ea1fc2fea396be645db0b88b93");
+        background-repeat: repeat;
+        font-family: 'BubblyHandwriting', sans-serif;
+        margin: 0;
+        padding: 0;
+        cursor: url("https://0x0.st/Xp1A.png"), auto !important;
+        font-family: 'moreSugar';
+ 
+    }
+    
+
+    #main {
+        position: fixed;
+        left: 6%;
+        top: 6%;
+        transform: translate(-50%, -50%);
+        width: 1250px;
+        height: calc(1250px * 9 / 16);
+        background-image: url(https://codehs.com/uploads/8ef2ef6c838fb5b4ad4dc5b1d398ebf7);
+        background-size: 1700px;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'moreSugar';
+        animation-name: floating;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
+
+#photo{
+    position: fixed;
+    left: 44%;
+    top: 30%;
+    animation-name: floatingTwo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#photoOto{
+    position: fixed;
+    left: 11%;
+    top: 54%;
+    animation-name: floatingTwo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+#caption{
+    position: fixed;
+    left: 59%;
+    top: 67%;
+    animation-name: floatingTwo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.Title {
+  position: fixed;
+  left: 54.5%;
+  top: 25%;
+  font-family: 'moreSugar', sans-serif;
+  letter-spacing: 1px;
+  font-size: 40px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  color: #c8bbb5;
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: #645651;
+
+}

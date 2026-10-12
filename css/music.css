@@ -1,0 +1,119 @@
+@font-face {
+    font-family: 'BubblyHandwriting';
+    src: url('BubblyHandwriting-Regular.ttf') format('truetype');
+}
+
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }    
+}
+
+
+    #main {
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1250px;
+        height: calc(1250px * 9 / 16);
+        background-size: 1250px;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'BubblyHandwriting', sans-serif;
+    }
+    
+    #home{
+        position: fixed;
+        left: 4%;
+        top: 6%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+    }
+    
+    body {
+        margin: 0px;
+        background: #fbdfef;
+        background-position: center;
+        background-size: auto;
+        font-family: 'BubblyHandwriting', sans-serif;
+        position: relative;
+    }
+    
+    .buttonLog {
+        width:16%;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-left: 20%;
+        padding-top: 9%;
+        position: fixed;
+        font-family: 'BubblyHandwriting', sans-serif;
+        
+    }
+    
+    .buttonLogMedia {
+        width: 20%;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-left: 60%;
+        padding-top: 14%;
+        position: fixed;
+        font-family: 'BubblyHandwriting', sans-serif;
+        
+    }
+    
+    .buttonlogMusic {
+        width:16%;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 20px;
+        left: 20%;
+        top: 2%;
+        position: fixed;
+        font-family: 'BubblyHandwriting', sans-serif;
+        background-image: url("https://codehs.com/uploads/8c3902a9926b819f9ca13c7fd85ed1e7"), z-index = 2;
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
+    
+    #titleBox{
+        position: absolute;
+        left: 40%;
+        animation-name: floating;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        
+    }
+    
+    #buttonlogBackground{
+        position: absolute;
+        left: 9%;
+    }
+    
+    #playlistOne{
+        position: fixed;
+        left: -3%;
+        top: 50%;
+    }
+    
+    #playlistTwo{
+        position: fixed;
+        left: 34%;
+        top: 50%;
+    }
+    
+    #playlistThree{
+        position: fixed;
+        left: 71%;
+        top: 50%;
+    }
+    
+    #playlistFour{
+        position: fixed;
+        left: -3%;
+        top: 105%;
+    }

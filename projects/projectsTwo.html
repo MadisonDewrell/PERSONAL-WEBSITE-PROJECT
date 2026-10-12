@@ -1,0 +1,103 @@
+<link rel="stylesheet" href="/css/projects.css"/>
+<link rel="stylesheet" href="/css/button.css"/>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background-color: #ffe4e1;
+    overflow: hidden;
+    cursor: none; /* Hides the default cursor */
+  }
+
+  .sparkle {
+    position: absolute;
+    width: 12px; /* Adjust size as needed */
+    height: 12px; /* Adjust size as needed */
+    background: url('https://codehs.com/uploads/8edec3be4b6ab1043e64cb2f7f2491ca') no-repeat center center;
+    background-size: contain;
+    pointer-events: none;
+    animation: sparkle 0.7s forwards;
+  }
+
+  @keyframes sparkle {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(1.5);
+    }
+  }
+</style>
+</head>
+<body>
+
+
+<script>
+  document.addEventListener('click', createSparkles);
+
+  function createSparkles(e) {
+    const numSparkles = 10; // Number of sparkles per click
+
+    for (let i = 0; i < numSparkles; i++) {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+
+      // Random offset for each sparkle
+      const offsetX = (Math.random() - 0.5) * 100;
+      const offsetY = (Math.random() - 0.5) * 100;
+
+      sparkle.style.left = `${e.pageX + offsetX}px`;
+      sparkle.style.top = `${e.pageY + offsetY}px`;
+
+      document.body.appendChild(sparkle);
+
+      // Remove the sparkle after the animation ends
+      sparkle.addEventListener('animationend', () => {
+        sparkle.remove();
+      });
+    }
+  }
+</script>
+
+</body>
+
+<div id = "home">
+    <div class="homeButton">
+        <a class="myButton" id="homeButton" href="/index.html">
+            <img src="https://codehs.com/uploads/d80e7c3097f29de25d8ae2b6282a8c8d" width="70" />
+        </a>
+    </div>
+</div>
+
+<div id ="main">
+
+
+
+
+
+
+
+
+
+
+
+<div id = "rightButton">
+    <a class="myButton" id="homeButton" href="projectsThree.html">
+            <img src="https://codehs.com/uploads/2800348cdcffb1621d77c69700e63555" width="75" />
+    </a>
+</div>
+
+<div id = "leftButton">
+    <a class="myButton" id="homeButton" href="/projects.html">
+            <img src="https://codehs.com/uploads/4d52c856b782f73da75d174534221cde" width="75" />
+    </a>
+</div>
+
+    </body>
+</div>

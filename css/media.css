@@ -1,0 +1,75 @@
+body {
+        background-image: url("https://codehs.com/uploads/87a0e9ea1fc2fea396be645db0b88b93");
+        background-repeat: repeat;
+        font-family: 'BubblyHandwriting', sans-serif;
+        margin: 0;
+        padding: 0;
+        cursor: url("https://0x0.st/Xp1A.png"), auto !important;
+        font-family: 'BubblyHandwriting', sans-serif;
+    }
+    #background {
+        background-image: url("https://codehs.com/uploads/87a0e9ea1fc2fea396be645db0b88b93");
+        background-repeat: repeat;
+        background-size: auto;
+        font-family: 'BubblyHandwriting', sans-serif;
+    }
+    
+    #main {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 1250px;
+        height: calc(1250px * 9 / 16);
+        background-image: url(https://codehs.com/uploads/85bec30f1ed02b9cb8c9ea1094611844);
+        background-size: 1250px;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'BubblyHandwriting', sans-serif;
+    }
+    
+    #home {
+        position: fixed;
+        left: 4%;
+        top: 6%;
+        transform: translate(-50%, -50%);
+        width: 100px;
+        
+    }
+    
+    .buttonLog {
+        width:16%;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 20px;
+        margin-left: 20%;
+        padding-top: 9%;
+        position: fixed;
+        font-family: 'BubblyHandwriting', sans-serif;
+        
+    }
+    
+    .buttonLogMedia {
+
+        color: white;
+        letter-spacing: 1px;
+        font-size: 32px;
+        margin-left: 56%;
+        padding-top: 15%;
+        position: fixed;
+        font-family: 'BubblyHandwriting', sans-serif;
+        
+        
+    }
+    
+    .mediaMainLog{
+        width:16%;
+        color: white;
+        letter-spacing: 1px;
+        font-size: 30px;
+        margin-left: 39%;
+        padding-top: 15%;
+        position: fixed;
+        font-family: 'BubblyHandwriting', sans-serif;
+        
+    }
